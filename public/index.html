@@ -3,109 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skids Happy Hub | Day Care & Tuition in Cumbum</title>
-<meta name="description" content="Best daycare and tuition center in Chennai. Safe, fun and learning environment for kids.">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Skids Happy Hub | Premium Day Care & Tuition in Cumbum</title>
+<meta name="description" content="Premium daycare and tuition center in Cumbum. Safe, caring and advanced learning environment for kids.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body { margin:0; font-family:'Poppins', sans-serif; }
-header { background:#ff914d; color:white; padding:20px; text-align:center; }
-nav { display:flex; justify-content:center; gap:20px; background:#fff; padding:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
-nav a { text-decoration:none; color:#333; font-weight:500; }
-.hero { background:linear-gradient(to right,#ffe5d0,#fff); padding:50px; text-align:center; }
-.hero h1 { font-size:2.5rem; }
-.section { padding:40px 20px; max-width:1000px; margin:auto; }
-.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-.card { background:white; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s; }
-.card:hover { transform:translateY(-5px); }
-form input, form textarea { width:100%; padding:10px; margin:10px 0; border-radius:6px; border:1px solid #ccc; }
-button { background:#ff914d; color:white; padding:12px; border:none; border-radius:6px; cursor:pointer; width:100%; }
-footer { background:#333; color:white; text-align:center; padding:20px; }
+body { margin:0; font-family:'Poppins', sans-serif; color:#333; }
+header { background:linear-gradient(90deg,#ff914d,#ff6a00); color:white; padding:20px; text-align:center; }
+nav { display:flex; justify-content:center; gap:25px; background:#fff; padding:12px; position:sticky; top:0; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+nav a { text-decoration:none; color:#333; font-weight:600; }
+.hero { background:url('https://images.unsplash.com/photo-1600880292089-90e4d1a5c2c3') center/cover no-repeat; height:90vh; display:flex; align-items:center; justify-content:center; text-align:center; color:white; }
+.hero .content { background:rgba(0,0,0,0.6); padding:30px; border-radius:15px; }
+.hero h1 { font-size:3rem; margin-bottom:10px; }
+.hero p { font-size:1.2rem; }
+.cta-btn { margin-top:15px; display:inline-block; background:#ff914d; color:white; padding:12px 25px; border-radius:30px; text-decoration:none; }
+.section { padding:60px 20px; max-width:1100px; margin:auto; }
+.section h2 { text-align:center; margin-bottom:20px; font-size:2rem; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; }
+.card { background:white; border-radius:15px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:0.3s; }
+.card img { width:100%; height:180px; object-fit:cover; }
+.card h3 { padding:10px; }
+.card p { padding:0 10px 15px; }
+.card:hover { transform:translateY(-10px); }
+.features { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; text-align:center; }
+.feature { background:#fff5ec; padding:20px; border-radius:10px; }
+.gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; }
+.gallery img { width:100%; height:180px; object-fit:cover; border-radius:10px; transition:0.3s; }
+.gallery img:hover { transform:scale(1.05); }
+.testimonials { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+.testimonial { background:white; padding:20px; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); }
+iframe { border-radius:10px; }
+.contact { text-align:center; }
+.whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px; border-radius:50%; font-size:20px; text-decoration:none; }
+footer { background:#222; color:white; text-align:center; padding:25px; }
 </style>
 </head>
+
 <body>
 
 <header>
 <h1>Skids Happy Hub</h1>
-<p>Day Care & Tuition Center</p>
+<p>Premium Day Care & Tuition Center</p>
 </header>
 
 <nav>
 <a href="#home">Home</a>
 <a href="#about">About</a>
-<a href="#services">Programs</a>
+<a href="#programs">Programs</a>
+<a href="#features">Why Us</a>
+<a href="#gallery">Gallery</a>
 <a href="#admission">Admission</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section class="hero" id="home">
-<h1>Where Kids Learn, Play & Grow 🌈</h1>
-<p>Safe, fun and engaging environment for your child's bright future.</p>
+<div class="content">
+<h1>Where Bright Futures Begin 🌟</h1>
+<p>Trusted by parents. Loved by kids.</p>
+<a href="#admission" class="cta-btn">Enroll Now</a>
+</div>
 </section>
 
 <section id="about" class="section">
 <h2>About Us</h2>
-<p>We provide a nurturing daycare environment along with quality tuition to help children excel academically and socially.</p>
+<p style="text-align:center; max-width:700px; margin:auto;">At Skids Happy Hub, we provide a safe, nurturing and stimulating environment where children learn, play and grow with confidence.</p>
 </section>
 
-<section id="services" class="section">
+<section id="programs" class="section">
 <h2>Our Programs</h2>
 <div class="cards">
-<div class="card"><h3>Day Care</h3><p>Safe supervision, meals and playtime.</p></div>
-<div class="card"><h3>Tuition</h3><p>Personalized learning for all grades.</p></div>
-<div class="card"><h3>Activities</h3><p>Arts, crafts, storytelling & games.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+<h3>Day Care</h3>
+<p>Safe, caring and engaging environment.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584697964403-9b8f5f9c6d6c">
+<h3>Tuition</h3>
+<p>Strong academic foundation for kids.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238">
+<h3>Activities</h3>
+<p>Creative learning through fun activities.</p>
+</div>
 </div>
 </section>
 
-<!-- <section id="admission" class="section">
-<h2>Admission Form</h2>
-<form id="form">
-<input type="text" placeholder="Child Name" required id="name">
-<input type="number" placeholder="Age" required id="age">
-<input type="text" placeholder="Parent Name" required id="parent">
-<input type="tel" placeholder="Phone Number" required id="phone">
-<textarea placeholder="Address" id="address"></textarea>
-<button type="submit">Submit Admission</button>
-</form>
-<p id="msg"></p>
-</section> -->
-<section id="admission" class="section">
-<h2>Admission Form</h2>
-<p>Please fill out the admission form below:</p>
-<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyVND9ljdspk0mXu34MYop1AH_OT-ZZG4FvT94BB10Z6bzQA/viewform?usp=publish-editorembedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyVND9ljdspk0mXu34MYop1AH_OT-ZZG4FvT94BB10Z6bzQA/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<section id="features" class="section">
+<h2>Why Choose Us</h2>
+<div class="features">
+<div class="feature">👩‍🏫 Experienced Staff</div>
+<div class="feature">🔒 Safe Environment</div>
+<div class="feature">📚 Quality Education</div>
+<div class="feature">🎨 Fun Activities</div>
+</div>
 </section>
 
-<section id="contact" class="section">
+<section id="gallery" class="section">
+<h2>Happy Moments 📸</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9">
+<img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13">
+<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74">
+<img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c">
+</div>
+</section>
+
+<section id="testimonials" class="section">
+<h2>What Parents Say ❤️</h2>
+<div class="testimonials">
+<div class="testimonial">\"Amazing care and learning environment!\"</div>
+<div class="testimonial">\"My child loves going here every day.\"</div>
+<div class="testimonial">\"Highly recommended for working parents.\"</div>
+</div>
+</section>
+
+<section id="admission" class="section">
+<h2>Admission Form</h2>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyVND9ljdspk0mXu34MYop1AH_OT-ZZG4FvT94BB10Z6bzQA/viewform?embedded=true" width="100%" height="800"></iframe>
+</section>
+
+<section id="contact" class="section contact">
 <h2>Contact Us</h2>
-<p>📍 Cumbum, Chennai</p>
+<p>📍 Cumbum</p>
 <p>📞 +91 XXXXX XXXXX</p>
 </section>
 
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
+
 <footer>
-<p>© 2026 Skids Happy Hub</p>
+<p>© 2026 Skids Happy Hub | Building Bright Futures 🌟</p>
 </footer>
-
-<script>
-document.getElementById('form').addEventListener('submit', async (e) => {
-  e.preventDefault();
-
-  const data = {
-    name: document.getElementById('name').value,
-    age: document.getElementById('age').value,
-    parent: document.getElementById('parent').value,
-    phone: document.getElementById('phone').value,
-    address: document.getElementById('address').value
-  };
- const res = await fetch('/admission', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
-  });
-
-  const result = await res.json();
-  document.getElementById('msg').innerText = result.message;
-});
-</script>
 
 </body>
 </html>
