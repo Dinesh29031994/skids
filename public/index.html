@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skids Happy Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body { margin:0; font-family:'Poppins', sans-serif; }
+header { background:#ff914d; color:white; padding:20px; text-align:center; }
+nav { display:flex; justify-content:center; gap:20px; background:#fff; padding:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+nav a { text-decoration:none; color:#333; font-weight:500; }
+.hero { background:linear-gradient(to right,#ffe5d0,#fff); padding:50px; text-align:center; }
+.hero h1 { font-size:2.5rem; }
+.section { padding:40px 20px; max-width:1000px; margin:auto; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+.card { background:white; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s; }
+.card:hover { transform:translateY(-5px); }
+form input, form textarea { width:100%; padding:10px; margin:10px 0; border-radius:6px; border:1px solid #ccc; }
+button { background:#ff914d; color:white; padding:12px; border:none; border-radius:6px; cursor:pointer; width:100%; }
+footer { background:#333; color:white; text-align:center; padding:20px; }
+</style>
+</head>
+<body>
 
+<header>
+<h1>Skids Happy Hub</h1>
+<p>Day Care & Tuition Center</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Programs</a>
+<a href="#admission">Admission</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+<h1>Where Kids Learn, Play & Grow 🌈</h1>
+<p>Safe, fun and engaging environment for your child's bright future.</p>
+</section>
+
+<section id="about" class="section">
+<h2>About Us</h2>
+<p>We provide a nurturing daycare environment along with quality tuition to help children excel academically and socially.</p>
+</section>
+
+<section id="services" class="section">
+<h2>Our Programs</h2>
+<div class="cards">
+<div class="card"><h3>Day Care</h3><p>Safe supervision, meals and playtime.</p></div>
+<div class="card"><h3>Tuition</h3><p>Personalized learning for all grades.</p></div>
+<div class="card"><h3>Activities</h3><p>Arts, crafts, storytelling & games.</p></div>
+</div>
+</section>
+
+<!-- <section id="admission" class="section">
+<h2>Admission Form</h2>
+<form id="form">
+<input type="text" placeholder="Child Name" required id="name">
+<input type="number" placeholder="Age" required id="age">
+<input type="text" placeholder="Parent Name" required id="parent">
+<input type="tel" placeholder="Phone Number" required id="phone">
+<textarea placeholder="Address" id="address"></textarea>
+<button type="submit">Submit Admission</button>
+</form>
+<p id="msg"></p>
+</section> -->
+<section id="admission" class="section">
+<h2>Admission Form</h2>
+<p>Please fill out the admission form below:</p>
+<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyVND9ljdspk0mXu34MYop1AH_OT-ZZG4FvT94BB10Z6bzQA/viewform?usp=publish-editorembedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyVND9ljdspk0mXu34MYop1AH_OT-ZZG4FvT94BB10Z6bzQA/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</section>
+
+<section id="contact" class="section">
+<h2>Contact Us</h2>
+<p>📍 Your Location, City</p>
+<p>📞 +91 XXXXX XXXXX</p>
+</section>
+
+<footer>
+<p>© 2026 Skids Happy Hub</p>
+</footer>
+
+<script>
+document.getElementById('form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const data = {
+    name: document.getElementById('name').value,
+    age: document.getElementById('age').value,
+    parent: document.getElementById('parent').value,
+    phone: document.getElementById('phone').value,
+    address: document.getElementById('address').value
+  };
+ const res = await fetch('/admission', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+
+  const result = await res.json();
+  document.getElementById('msg').innerText = result.message;
+});
+</script>
+
+</body>
+</html>
